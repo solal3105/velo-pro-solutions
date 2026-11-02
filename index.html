@@ -133,6 +133,15 @@ nav a:hover{color:var(--ink)}
 .offer.main .btn{background:var(--accent);color:var(--ink)}
 .offer.main .btn:hover{background:#e9bd00}
 
+/* témoignages */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 24px;margin-top:64px}
+.quote{border-top:2px solid var(--ink);padding-top:28px;display:flex;flex-direction:column}
+.quote svg{width:28px;height:28px;color:var(--accent);margin-bottom:20px}
+.quote blockquote{font-family:var(--head);font-weight:500;font-size:1.15rem;line-height:1.45;color:var(--ink);letter-spacing:-.01em;flex:1}
+.quote .by{margin-top:28px;font-size:.93rem;color:var(--muted)}
+.quote .by strong{display:block;color:var(--ink);font-weight:600}
+.quote.todo blockquote,.quote.todo .by strong{color:#a3aab2}
+
 /* contact */
 .contact{background:var(--ink)}
 .contact h2{color:#fff}
@@ -155,7 +164,7 @@ footer a:hover{color:var(--ink)}
 @media (max-width:980px){
   section{padding:88px 0}
   .split,.dom,.anchor{grid-template-columns:minmax(0,1fr);gap:48px}
-  .cols,.uses,.offers{grid-template-columns:1fr}
+  .cols,.uses,.offers,.quotes{grid-template-columns:1fr}
   .cols{gap:40px}
   .hero-row{flex-direction:column;align-items:flex-start;gap:28px}
 }
@@ -189,6 +198,7 @@ footer a:hover{color:var(--ink)}
         <li><a href="#domaines">Expertise</a></li>
         <li><a href="#collectif">Qui sommes-nous</a></li>
         <li><a href="#offres">Offres</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -330,6 +340,17 @@ footer a:hover{color:var(--ink)}
           <ul><li>Parc de vélos mutualisés</li><li>Maintenance programmée</li><li>Personnalisation aux couleurs de l'entreprise</li></ul>
           <a href="#contact" class="btn btn-line">En savoir plus</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="temoignages">
+    <div class="wrap">
+      <h2>Ils nous font confiance</h2>
+      <div class="quotes">
+        <figure class="quote todo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 6C6.5 7.2 4 10 4 13.8V18h6v-6H7c.2-2 1.5-3.6 3.5-4.4L9.5 6zm10 0c-3 1.2-5.5 4-5.5 7.8V18h6v-6h-3c.2-2 1.5-3.6 3.5-4.4L19.5 6z"/></svg><blockquote>Témoignage à venir</blockquote><figcaption class="by"><strong>Nom Prénom</strong>Fonction, entreprise</figcaption></figure>
+        <figure class="quote todo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 6C6.5 7.2 4 10 4 13.8V18h6v-6H7c.2-2 1.5-3.6 3.5-4.4L9.5 6zm10 0c-3 1.2-5.5 4-5.5 7.8V18h6v-6h-3c.2-2 1.5-3.6 3.5-4.4L19.5 6z"/></svg><blockquote>Témoignage à venir</blockquote><figcaption class="by"><strong>Nom Prénom</strong>Fonction, entreprise</figcaption></figure>
+        <figure class="quote todo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 6C6.5 7.2 4 10 4 13.8V18h6v-6H7c.2-2 1.5-3.6 3.5-4.4L9.5 6zm10 0c-3 1.2-5.5 4-5.5 7.8V18h6v-6h-3c.2-2 1.5-3.6 3.5-4.4L19.5 6z"/></svg><blockquote>Témoignage à venir</blockquote><figcaption class="by"><strong>Nom Prénom</strong>Fonction, entreprise</figcaption></figure>
       </div>
     </div>
   </section>
